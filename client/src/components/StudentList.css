@@ -1,0 +1,49 @@
+/* src/components/StudentList.css (Create this file) */
+
+.student-list-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #050404;
+    border-radius: 8px;
+    background-color: #a25252;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #0a0909;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #101010;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #655f5f;
+}
+tr:nth-child(even) {
+    background-color: #655f5f;
+}
+
+td button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Green */
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+}

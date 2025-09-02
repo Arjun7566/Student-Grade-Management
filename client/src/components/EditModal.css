@@ -1,0 +1,95 @@
+/* EditModal.css
+  This file styles the pop-up form for editing student records.
+*/
+
+/* The semi-transparent background that covers the whole page */
+.modal-backdrop {
+  position: fixed; /* Stay in place even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* The white box that contains the form */
+.modal-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px; /* Limit the maximum width on larger screens */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between the title and the form */
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Styling for the form element itself */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+.modal-content label {
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Styling for the input fields */
+.modal-content input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Container for the action buttons */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* General button styling */
+.modal-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+/* Specific styling for the primary "Save" button */
+.modal-actions button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-actions button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Specific styling for the secondary "Cancel" button */
+.modal-actions button[type="button"] {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.modal-actions button[type="button"]:hover {
+  background-color: #ced4da;
+}
