@@ -8,7 +8,7 @@ import EditModal from './components/EditModal';
 import './App.css';
 
 // Define the base URL for your backend API
-const API_URL = 'https://student-grade-management-npa9.onrender.com';
+const API_URL = 'https://student-grade-management-backend.onrender.com';
 
 function App() {
     const [students, setStudents] = useState([]);
