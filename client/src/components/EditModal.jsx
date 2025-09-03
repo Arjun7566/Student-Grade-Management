@@ -18,7 +18,7 @@ function EditModal({ student, onClose, onSave }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:5000/students/${student._id}`, formData);
+            await axios.put(`https://student-grade-management-npa9.onrender.com/students/${student._id}`, formData);
             onSave(); // This will trigger a refresh and close the modal
         } catch (error) {
             console.error("Failed to update student", error);
