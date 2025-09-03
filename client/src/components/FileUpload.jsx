@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './FileUpload.css';
 
-const API_URL = 'https://student-grade-management-npa9.onrender.com';
+const API_URL = 'https://student-grade-management-backend.onrender.com';
 
 function FileUpload({ onUploadSuccess }) {
     const [file, setFile] = useState(null);
